@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Mani Raj Khushi</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #f1f1f1;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: #2d2d3f;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .header img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 15px #00ffc6;
+    }
+
+    .header h1 {
+      color: #00ffc6;
+      font-size: 34px;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .social {
+      margin-top: 15px;
+    }
+
+    .social a {
+      margin: 0 12px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social a:hover {
+      transform: scale(1.1);
+      color: #00ffc6;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .box {
+      flex: 1 1 300px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #1e1e2e;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 255, 198, 0.3);
+    }
+
+    .box h2 {
+      color: #00ffd5;
+      font-size: 20px;
+      border-bottom: 2px solid #00ffd5;
+      margin-bottom: 10px;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .box ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    .box ul li {
+      margin: 6px 0;
+      padding: 4px 6px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .box ul li:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .projects h2 {
+      color: #ffda6b;
+      border-color: #ffda6b;
+    }
+
+    .projects ul li::before {
+      content: "🔥 ";
+    }
+
+    .contact {
+      background-color: #38598b;
+    }
+
+    .contact h2 {
+      color: #b2ebf2;
+      border-color: #b2ebf2;
+    }
+
+    .contact a {
+      color: #b2ebf2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+    }
+
+    @media screen and (max-width: 768px) {
+      .grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>MANI RAJ KHUSHI</h1>
+      <img src="Mani.jpg" alt="Mani Raj Khushi">
+      <p>B.Tech CSE Student | Developer | Lifelong Learner</p>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/mynetwork/grow/" target="_blank">🔗 LinkedIn</a>
+        <a href="https://github.com/Mani17012004/OIBSIP" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="box">
+        <h2>Skills</h2>
+        <ul>
+          <li>💻 HTML</li>
+          <li>🎨 CSS</li>
+          <li>⚙️ JavaScript</li>
+          <li>☕ Java</li>
+          <li>🐍 Python</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Education</h2>
+        <ul>
+          <li>✅ Class 10 - Completed</li>
+          <li>✅ Class 12 - Completed</li>
+          <li>🎓 B.Tech CSE (Pursuing) - Galgotias University</li>
+        </ul>
+      </div>
+
+      <div class="box projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>Portfolio Website using HTML/CSS</li>
+          <li>Temperature Convertor using html and CSS</li>
+          <li>Student Result Management System (Java + MySQL)</li>
+        </ul>
+      </div>
+
+      <div class="box contact">
+        <h2>Contact</h2>
+        <p>📞 Phone: 986054789</p>
+        <p>📧 Email: <a href="mailto:khushimaniraj@gmail.com">khushimaniraj@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    2025 Mani Raj Khushi
+  </footer>
+
+</body>
+</html>
